@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fa;
+    color: #1f2937;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+.header {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.container {
+    width: min(1050px, 92%);
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.card h2,
+.reviews-section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.primary {
+    background: #1e3a5f;
+    color: white;
+}
+
+.secondary {
+    background: #64748b;
+    color: white;
+}
+
+.message {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    background: #dbeafe;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.review-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.review-card h3 {
+    margin: 0 0 5px;
+}
+
+.customer {
+    margin: 0;
+    color: #64748b;
+}
+
+.rating {
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.comment {
+    line-height: 1.6;
+    color: #475569;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit {
+    background: #2563eb;
+    color: white;
+}
+
+.delete {
+    background: #dc2626;
+    color: white;
+}
+
+.empty {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .review-top {
+        flex-direction: column;
+    }
+}
